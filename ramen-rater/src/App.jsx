@@ -21,12 +21,12 @@ const RamenMenu = () => {
   }, [])
   
   return (
-    <div>
+    <div id="ramen-menu">
       {ramen.map((indivRamen) => (
         <div key={indivRamen.id}>
           <img src={indivRamen.image} className="ramen-img"></img>
-          <h2>{indivRamen.name}</h2>
-          <p>{indivRamen.restaurant}</p>
+          {/* <h2>{indivRamen.name}</h2>
+          <p>{indivRamen.restaurant}</p> */}
         </div>
       ))}
     </div>
@@ -36,16 +36,22 @@ const RamenMenu = () => {
 
 const DisplayedRamen = () => {
 
+  return (
+    <div id="ramen-detail">
+      <img className="detail-image" src="./src/assets/image-placeholder.jpg" alt="Insert Image Here" />
+      <h2 className="name">Insert Name Here</h2>
+      <h3 className="restaurant">Insert Restaurant Here</h3>
+    </div>
+  )
 }
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
       <Header />
-      <h1>Hello</h1>
       <RamenMenu />
+      <DisplayedRamen />
     </div>
   )
 }
