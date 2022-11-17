@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body {
+.App {
   padding: 1rem;
   text-align: center;
   background-color: #fafafa;
@@ -28,6 +28,9 @@ header {
   max-width: calc(100vw - 2rem);
 }
 
+.ramen-img-div {
+  margin-right: 0.5rem;
+}
 .ramen-img {
   flex: 0 1 auto;
   height: 150px;
